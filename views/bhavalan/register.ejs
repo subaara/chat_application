@@ -1,0 +1,65 @@
+<div>
+	<form method="post" action="./register">
+	<input type="text" name="userName" id="userName" name="userName" placeholder="Username"/>
+	<input type="password" name="password"  id="password" name="password" placeholder="Password"/>
+	<input type="text" name="firstName"  id="firstName" placeholder="First Name"/>
+	<input type="submit" id="submit" value="Register" />
+
+	<input type="button" value="hai" class="lol"/>
+	</form>
+	<ul>
+	<%
+		result.forEach(function(obj) {
+	%>
+			
+	<li> Name : <%= JSON.stringify(obj.firstName) %> </li>
+	<%		
+		});
+	%>
+	</ul>
+
+
+</div>
+
+ <script type="text/javascript">
+	
+
+
+// $('.lol').click(d)
+
+// function d() {
+
+
+// $.ajax({
+// 			url: '/b/register',
+// 			type: 'post',
+// 			data: {
+// 				userName: $('#userName'),
+// 				password: $('#password'),
+// 				firstName: $('#firstName')
+// 			},
+// 			success: function(data) {
+// 				alert('s')
+// 			},
+// 			failure: function() {
+// 				alert(0);
+// 			}
+// 		})
+// }
+
+
+// 	$('#submit').click(function() {
+// 		$.ajax({
+// 			url: '/b/register',
+// 			type: 'post',
+// 			data: {
+// 				userName: $('#userName'),
+// 				password: $('#password'),
+// 				firstName: $('#firstName')
+// 			},
+// 			success: function(data) {
+				
+// 			}
+// 		})
+// 	});
+// </script>
